@@ -1,0 +1,177 @@
+/*GENERAL STYLE*/
+
+.container {
+    max-width: 840px; 
+    margin: 0 auto;
+}
+
+.container > div {
+    margin: 40px;
+}
+
+body {
+    font-family: 'Noto Sans' , sans-serif;
+    background-color: rgba(217, 209, 251, 0.759);
+    color: rgb(26, 0, 49);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto Mono' , monospace;
+}
+
+hr {
+    border: 0;
+    height: 1.5px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+/*INTRO SECTION*/
+
+.intro {
+    text-align: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+}
+ 
+.profile-picture:hover {
+    box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
+}
+
+/*ABOUT SECTION*/
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.i-am, .i-like {
+    text-align: center;
+    text-decoration: none;
+}
+
+.about-list {
+    list-style: none;
+    text-align: center;
+    padding: 0%;
+}
+
+@media screen and (max-width:480px) {
+    .about-grid {
+        grid-template-columns: 100%;
+    }
+}
+
+/*PORTFOLIO SECTION*/
+
+.projects-heading {
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+@media screen and (max-width:650px) {
+    .projects-grid {
+        grid-template-columns: 100%;
+    }
+}
+
+.projects-images {
+    justify-self: center;
+    padding: 2%;
+	transition: all ease-in-out .2s;
+    border-radius: 5%;
+}
+
+.projects-images:hover {
+    filter: brightness(.90);
+}
+
+.projects-images-wrapper {
+    justify-self: center;
+    padding: 4%;
+    position: relative;
+}
+
+.projects-images-wrapper:hover > h4 {
+    visibility: visible;
+}
+
+.projects-images-wrapper > h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    color: white;
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out .2s;
+}
+
+
+
+/*LINKS & CONTACT SECTION*/
+
+.links-and-contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.links {
+    justify-self: center;
+}
+
+.links-lists {
+    list-style: none;
+    padding: 0%;
+}
+
+.links-lists li a {
+    text-decoration: none;
+    color: rgb(59, 58, 58);
+    font-family: 'Roboto Mono' , monospace;
+    font-weight: 200;
+}
+
+@media screen and (max-width:650px) {
+    .links-and-contact {
+        grid-template-columns: 100%;
+    }
+}
+
+form inpu, textarea {
+    padding: 5px;
+    border-radius: 5px;
+    width: 240px;
+}
+
+form {
+    width: 250px;
+    margin: 0 auto;
+}
+
+form input[type="submit"] {
+    width: 100px;
+}
+
+form input[type="submit"] {
+    background-color: rgb(26, 0, 49);
+    color: white;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: small;
+}
+
+.submit-button-wrapper {
+    margin: 10px 0;
+}
+
+
